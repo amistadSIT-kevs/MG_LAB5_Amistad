@@ -9,7 +9,6 @@ import Navbar from "./Navigational";
 import ComputerRepair from "./pages/services/ComputerRepair";
 import InternetSetup from "./pages/services/InternetSetup";
 import LocalWebDev from "./pages/services/LocalWebDev";
-import { Navigate } from "react-router-dom";
 
 function App() {
 
@@ -27,8 +26,6 @@ function App() {
       <Route path="/services/computer-repair" element={<ComputerRepair />} />
       <Route path="/services/internet-setup" element={<InternetSetup />} />
       <Route path="/services/local-web-dev" element={<LocalWebDev />} />
-
-      <Route path="*" element={<Navigate to="/" replace />} />
 
     </Routes>
     </BrowserRouter>
